@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contacto</title>
+</head>
+
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="/action_page.php" method="get">
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombres" name="nombres" required><br><br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+    <fieldset>
+        <legend>Género</legend>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="Género"><br><br>
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="femenino" name="Género"><br><br>
+        <label for="nobin">No binario</label>
+        <input type="radio" id="nobin" name="Género"><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+    <fieldset>
+        <legend>Datos de contacto</legend>
+        <label for="gmail">Correo electrónico</label>
+        <input type="email" id="gmail" name="gmail" required><br><br>
+        <label for="tel">Telefono</label>
+        <input type="tel" id="tel" name="tel" required><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+    <fieldset>    
+        <label for="más">¿Qué más te gustaría ver en este sitio web?</label>
+        <br />
+        <textarea id="más" name="Por ver" required></textarea>
+    </fieldset>
+    <button type="reset">Limpiar</button>
+    <button type="submit">Enviar</button>
+    </form> 
+  
+</body>
+
+</html>
