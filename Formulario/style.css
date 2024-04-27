@@ -1,0 +1,57 @@
+body {
+    font-family: "Karla", sans-serif;
+    background-image: url("img/flor.jpg");
+    display: flex;
+    min-height: 100vh;
+}
+
+form {
+    position: relative;
+    width: 600px;
+    height: 1440px;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    background: #fff;
+    border-color: #f4cbcf;
+    border-style: groove;
+    max-width: 500px;
+}
+
+button {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #ffc478
+}
+
+h3 {
+  background-color: #f4cbcf;
+  color: rgb(0, 0, 0);
+  padding: 2px 5px;
+}
+
+p {
+    font-weight: 300;
+    font-size: small;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #ffc478;
+    font-family: cursive;
+    font-size: 3.5em;
+}
+
+a {
+    font-weight: 300;
+    color: black;
+}
