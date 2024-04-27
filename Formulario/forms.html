@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - NODO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 style="color: rgb(228, 131, 67); text-align: center;">Inscríbete a NODO</h1>
+    <h2>Introduce tus datos aquí:</h2>
+    <form>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required><br><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de contacto</legend>
+        <label for="gmail">Correo electrónico:</label>
+        <input type="email" id="gmail" name="gmail" required><br><br>
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" name="tel" required><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de residencia</legend>
+        <label for="País">País:</label>
+        <input type="text" id="país" name="país" required><br><br>
+        <label for="Departamento o Estado">Departamento o Estado:</label>
+        <input type="text" id="Departamento o Estado" name="Departamento o Estado" required><br><br>
+        <label for="dirección">Dirección:</label>
+        <input type="text" id="dirección" name="dirección" required><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>¿A qué curso deseas inscribirte?</legend>
+        <input type="radio" id="Design Thinking For Software Developers" name="Curso" value="Design Thinking For Software Developers">
+        <label for="curso">Design Thinking For Software Developers</label><br>
+        <input type="radio" id="Flutter" name="Curso" value="Flutter">
+        <label for="curso">Flutter</label><br>
+        <input type="radio" id="Business Analyst" name="Curso" value="Business Analyst">
+        <label for="curso">Business Analyst</label><br>
+        <input type="radio" id="Designops" name="Curso" value="Designops">
+        <label for="curso">Designops</label><br>
+        <input type="radio" id="Diálogos Digitales: Gpt Para Principiantes" name="Curso" value="Diálogos Digitales: Gpt Para Principiantes">
+        <label for="curso">Diálogos Digitales: Gpt Para Principiantes</label><br>
+        <input type="radio" id="Marco Conceptual Y Legal De La IA" name="Curso" value="Marco Conceptual Y Legal De La IA">
+        <label for="curso">Marco Conceptual Y Legal De La IA</label><br>
+        <input type="radio" id="A Comunicarte Con Las Inteligencias Artificiales" name="Curso" value="A Comunicarte Con Las Inteligencias Artificiales">
+        <label for="curso">A Comunicarte Con Las Inteligencias Artificiales</label><br>
+        <input type="radio" id="Introducción A Java" name="Curso" value="Introducción A Java">
+        <label for="curso">Introducción A Java</label><br>
+        <input type="radio" id="Fundamentals Data" name="Curso" value="Fundamentals Data">
+        <label for="curso">Fundamentals Data</label><br>
+        <input type="radio" id="Marketing Digital" name="Curso" value="Marketing Digital">
+        <label for="curso">Marketing Digital</label><br>
+        <input type="radio" id="Python" name="Curso" value="Python">
+        <label for="curso">Python</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Modalidad</legend>
+        <select required>
+            <option value="Virtual">Virtual</option>
+            <option value="Presencial">Presencial</option>
+        </select>
+    </fieldset>
+    <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
