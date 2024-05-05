@@ -1,0 +1,29 @@
+  * { font-family: Tahoma;}
+  
+  p { color: #808080; }
+
+  
+  .primary:first-child {
+    color: black;
+  }
+  
+  .spaceships .primary { 
+    color: darkkhaki;
+  }
+  
+  /*Había borrado el pink, pero lo corregí así*/
+  
+  li:last-child { color: #FF1493; }
+  .red { color: #FF4500; }
+
+
+
+  /*Estas son algunas correcciones*/
+
+body div { 
+    font-family: Tahoma;
+}
+
+.spaceships ul li:last-child { 
+    color: #FF1493; 
+}
