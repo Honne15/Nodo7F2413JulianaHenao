@@ -1,6 +1,43 @@
-  * { font-family: Tahoma;}
+  /*Esta es la corrección completa del ejercicio*/
+  body div {
+    font-family: Tahoma;
+  }
   
-  p { color: #808080; }
+  p { 
+    color: #808080; 
+  }
+  
+  p:first-child {
+    color: black;
+  }
+
+  .spaceships .primary { 
+    color: darkkhaki;
+  }
+
+  .spaceships ul li:last-child {
+    color: #FF1493;
+  }
+
+  .red {
+    color: #FF4500;
+  }
+
+  /*Podemos poner lo de .red también así*/
+  ul li:last-child {
+    color: #FF4500;
+  }
+  
+  
+  /* Como lo había hecho en clase 
+  
+  * { 
+  font-family: Tahoma;
+  }
+  
+  p { 
+  color: #808080; 
+  }
 
   
   .primary:first-child {
@@ -11,14 +48,14 @@
     color: darkkhaki;
   }
   
-  /*Había borrado el pink, pero lo corregí así*/
+  /*Había borrado el pink, pero lo corregí así
   
   li:last-child { color: #FF1493; }
   .red { color: #FF4500; }
 
 
 
-  /*Estas son algunas correcciones*/
+  /*Estas son algunas correcciones
 
 body div { 
     font-family: Tahoma;
