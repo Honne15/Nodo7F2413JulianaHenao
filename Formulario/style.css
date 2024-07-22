@@ -1,6 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Karla", sans-serif;
-    background-image: url("img/flor.jpg");
+    background-image: url("img/fondo.jpg");
     display: flex;
     min-height: 100vh;
 }
@@ -8,14 +14,18 @@ body {
 form {
     position: relative;
     width: 600px;
-    height: 1440px;
+    height: 1380px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 2%;
     box-sizing: border-box;
     background: #fff;
-    border-color: #f4cbcf;
-    border-style: groove;
+    border: 3px #0060df solid;
+    border-radius: 30px;
     max-width: 500px;
+    box-shadow: 0 0 100px 10px #434242;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
 }
 
 button {
@@ -29,29 +39,42 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: #ffc478
+    background-color: #fab440;
+}
+
+button:hover {
+    background-color: bisque;
 }
 
 h3 {
-  background-color: #f4cbcf;
-  color: rgb(0, 0, 0);
+  background-color: #0060df;
+  border-radius: 20px;
+  color: #ffffff;
   padding: 2px 5px;
+  margin-top: 5%;
+  margin-bottom: 4%;
 }
 
 p {
-    font-weight: 300;
-    font-size: small;
+    font-weight: 400;
+    font-size: 18px;
     text-align: center;
+    margin-top: 2%;
+    color: #0060df;
 }
 
 h1 {
     text-align: center;
-    color: #ffc478;
+    color: #fab440;
     font-family: cursive;
     font-size: 3.5em;
 }
 
 a {
-    font-weight: 300;
-    color: black;
+    font-weight: 500;
+    color: #1d56c2;
+}
+
+h2{
+    margin-top: 3%;
 }
