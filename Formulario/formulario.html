@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - NODO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="action.php" method="post">
+        <h1>Inscríbete a NODO EAFIT</h1>
+        <p>Link a <a href="https://aula.nodoeafit.com/" target="_blank">NODO</a></p>
+        <h2>Introduce tus datos aquí:</h2>
+    
+        <h3>Datos personales</h3>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" placeholder="Maria" required><br><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="López" required><br><br>
+    
+        <h3>Datos de contacto</h3>
+        <label for="gmail">Correo electrónico:</label>
+        <input type="email" id="gmail" name="gmail" placeholder="123@gmail.com" required><br><br>
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" name="tel" placeholder="321 6543740"><br><br>
+    
+        <h3>Datos de residencia</h3>
+        <label for="pais">País</label>
+        <input type="text" id="pais" name="país" placeholder="Colombia" required><br><br>
+        <label for="departamentoEstado">Departamento o Estado:</label>
+        <input type="text" id="departamentoEstado" name="Departamento o Estado" placeholder="Antioquia" required><br><br>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="dirección" placeholder="Calle 54 #32-21" required><br><br>
+   
+        <h3>¿A qué curso deseas inscribirte?</h3>
+        <input type="radio" id="designThinkingForSoftwareDevelopers" name="Curso" value="Design Thinking For Software Developers" required>
+        <label for="designThinkingForSoftwareDevelopers">Design Thinking For Software Developers</label><br>
+        <input type="radio" id="flutter" name="Curso" value="Flutter">
+        <label for="flutter">Flutter</label><br>
+        <input type="radio" id="businessAnalyst" name="Curso" value="Business Analyst">
+        <label for="businessAnalyst">Business Analyst</label><br>
+        <input type="radio" id="designops" name="Curso" value="Designops">
+        <label for="designops">Designops</label><br>
+        <input type="radio" id="dialogosDigitalesGptParaPrincipiantes" name="Curso" value="Diálogos Digitales: Gpt Para Principiantes">
+        <label for="dialogosDigitalesGptParaPrincipiantes">Diálogos Digitales: Gpt Para Principiantes</label><br>
+        <input type="radio" id="marcoConceptualYLegalDeLaIA" name="Curso" value="Marco Conceptual Y Legal De La IA">
+        <label for="marcoConceptualYLegalDeLaIA">Marco Conceptual Y Legal De La IA</label><br>
+        <input type="radio" id="aComunicarteConLasInteligenciasArtificiales" name="Curso" value="A Comunicarte Con Las Inteligencias Artificiales">
+        <label for="aComunicarteConLasInteligenciasArtificiales">A Comunicarte Con Las Inteligencias Artificiales</label><br>
+        <input type="radio" id="introduccionAJava" name="Curso" value="Introducción A Java">
+        <label for="introduccionAJava">Introducción A Java</label><br>
+        <input type="radio" id="fundamentalsData" name="Curso" value="Fundamentals Data">
+        <label for="fundamentalsData">Fundamentals Data</label><br>
+        <input type="radio" id="marketingDigital" name="Curso" value="Marketing Digital">
+        <label for="marketingDigital">Marketing Digital</label><br>
+        <input type="radio" id="python" name="Curso" value="Python">
+        <label for="python">Python</label>
+   
+    <div>
+        <h3>Modalidad</h3>
+        <select id="modalidad" name="Modalidad" required>
+            <option value>Virtual</option>
+            <option value>Presencial</option>
+        </select>
+    </div>
+    <div>
+        <h3>¿Estás trabajando actualmente?</h3>
+        <select id="trabajo" name="Trabajo" required>
+            <option value>Si</option>
+            <option value>No</option>
+        </select>
+    </div>
+    <div>
+        <h3>Descripción personal</h3>
+        <textarea id="descripcion" name="Descripción personal" maxlength="300" rows="4" cols="61" required></textarea>
+    </div>
+    <br>
+    <div>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpiar</button>
+    </div>
+    </form>
+</body>
+</html>
