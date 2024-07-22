@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fee1dd;
+}
+
+.reloj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    border: 8px #9db0ce double;
+    border-radius: 50%;
+    box-shadow: inset 0 5px 25px #00000080, 0 5px 25px #00000080, 0 5px 30px #00000080, 0 5px 35px #00000080, 0 5px 35px #00000080, 0 5px 35px #00000080;
+}
+
+.punto-central{
+    position: absolute;
+    background-color: #9db0ce;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.numeros-reloj {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.segundero,
+.minutos,
+.horas {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+}
+
+.segundero {
+    width: 2px;
+    height: 44%;
+    background: #535878;
+    z-index: 3;
+}
+
+.minutos {
+    width: 3px;
+    height: 36%;
+    background: #b8d8e3;
+    z-index: 2;
+}
+
+.horas {
+    width: 5px;
+    height: 30%;
+    background: #cea0aa;
+    z-index: 1;
+}
+
+/* Ajusta las animaciones */
+@keyframes rotarSegundero {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(450deg); }
+}
+
+@keyframes rotarMinutos {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(450deg); }
+}
+
+@keyframes rotarHoras {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(450deg); }
+}
+
+/* Estilos para la animación */
+.segundero {
+    animation: rotarSegundero 60s linear infinite;
+}
+
+.minutos {
+    animation: rotarMinutos 3600s linear infinite;
+}
+
+.horas {
+    animation: rotarHoras 43200s linear infinite;
+}
